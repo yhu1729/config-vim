@@ -7,3 +7,81 @@
 [submodule "external/junegunn/fzf.vim"]
 	path = external/junegunn/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "external/unblevable/quick-scope"]
+	path = external/unblevable/quick-scope
+	url = https://github.com/unblevable/quick-scope.git
+[submodule "external/AndrewRadev/switch.vim"]
+	path = external/AndrewRadev/switch.vim
+	url = https://github.com/AndrewRadev/switch.vim.git
+[submodule "external/wellle/targets.vim"]
+	path = external/wellle/targets.vim
+	url = https://github.com/wellle/targets.vim.git
+[submodule "external/mbbill/undotree"]
+	path = external/mbbill/undotree
+	url = https://github.com/mbbill/undotree.git
+[submodule "external/tpope/vim-abolish"]
+	path = external/tpope/vim-abolish
+	url = https://github.com/tpope/vim-abolish.git
+[submodule "external/bfrg/vim-c-cpp-modern"]
+	path = external/bfrg/vim-c-cpp-modern
+	url = https://github.com/bfrg/vim-c-cpp-modern.git
+[submodule "external/alvan/vim-closetag"]
+	path = external/alvan/vim-closetag
+	url = https://github.com/alvan/vim-closetag.git
+[submodule "external/tpope/vim-commentary"]
+	path = external/tpope/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "external/svermeulen/vim-cutlass"]
+	path = external/svermeulen/vim-cutlass
+	url = https://github.com/svermeulen/vim-cutlass
+[submodule "external/tpope/vim-endwise"]
+	path = external/tpope/vim-endwise
+	url = https://github.com/tpope/vim-endwise.git
+[submodule "external/tommcdo/vim-exchange"]
+	path = external/tommcdo/vim-exchange
+	url = https://github.com/tommcdo/vim-exchange.git
+[submodule "external/tpope/vim-fugitive"]
+	path = external/tpope/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "external/machakann/vim-highlightedyank"]
+	path = external/machakann/vim-highlightedyank
+	url = https://github.com/machakann/vim-highlightedyank.git
+[submodule "external/glts/vim-magnum"]
+	path = external/glts/vim-magnum
+	url = https://github.com/glts/vim-magnum.git
+[submodule "external/andymass/vim-matchup"]
+	path = external/andymass/vim-matchup
+	url = https://github.com/andymass/vim-matchup.git
+[submodule "external/matze/vim-move"]
+	path = external/matze/vim-move
+	url = https://github.com/matze/vim-move.git
+[submodule "external/tpope/vim-obsession"]
+	path = external/tpope/vim-obsession
+	url = https://github.com/tpope/vim-obsession.git
+[submodule "external/glts/vim-radical"]
+	path = external/glts/vim-radical
+	url = https://github.com/glts/vim-radical.git
+[submodule "external/tpope/vim-repeat"]
+	path = external/tpope/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
+[submodule "external/habamax/vim-rst"]
+	path = external/habamax/vim-rst
+	url = https://github.com/habamax/vim-rst.git
+[submodule "external/svermeulen/vim-subversive"]
+	path = external/svermeulen/vim-subversive
+	url = https://github.com/svermeulen/vim-subversive.git
+[submodule "external/tpope/vim-surround"]
+	path = external/tpope/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "external/tpope/vim-unimpaired"]
+	path = external/tpope/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "external/chaoren/vim-wordmotion"]
+	path = external/chaoren/vim-wordmotion
+	url = https://github.com/chaoren/vim-wordmotion.git
+[submodule "external/svermeulen/vim-yoink"]
+	path = external/svermeulen/vim-yoink
+	url = https://github.com/svermeulen/vim-yoink.git
+[submodule "external/lervag/vimtex"]
+	path = external/lervag/vimtex
+	url = https://github.com/lervag/vimtex.git
