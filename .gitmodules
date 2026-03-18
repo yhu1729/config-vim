@@ -1,0 +1,3 @@
+[submodule "external/protesilaos/tempus-themes"]
+	path = external/protesilaos/tempus-themes
+	url = https://gitlab.com/protesilaos/tempus-themes.git
