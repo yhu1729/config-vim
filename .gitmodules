@@ -4,3 +4,6 @@
 [submodule "external/junegunn/fzf"]
 	path = external/junegunn/fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "external/junegunn/fzf.vim"]
+	path = external/junegunn/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
