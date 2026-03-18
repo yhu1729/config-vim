@@ -1,3 +1,6 @@
 [submodule "external/protesilaos/tempus-themes"]
 	path = external/protesilaos/tempus-themes
 	url = https://gitlab.com/protesilaos/tempus-themes.git
+[submodule "external/junegunn/fzf"]
+	path = external/junegunn/fzf
+	url = https://github.com/junegunn/fzf.git
