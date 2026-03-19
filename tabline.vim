@@ -1,51 +1,29 @@
-function Tabline()
-  let l:result = "%#TabLine#"
-  let l:buffer_list = uniq(tabpagebuflist())
-  for l:buffer_id in l:buffer_list
-    let l:buffer_type = getbufvar(l:buffer_id, "&buftype", "")
-    if l:buffer_type == "nofile"
-      continue
-    endif
-    if l:buffer_id == bufnr()
-      let l:result ..= "%#TabLineSel# "
-    else
-      let l:result ..= "%#TabLine# "
-    endif
-    let l:buffer_name = "New"
-    let l:buffer_name_component = split(bufname(l:buffer_id), "/")
-    if len(l:buffer_name_component) > 0
-      if l:buffer_id == bufnr()
-        let l:buffer_name = join(l:buffer_name_component, "/")
-      else
-        for l:index in range(len(l:buffer_name_component) - 1)
-          if l:buffer_name_component[l:index][0] == "."
-            let l:buffer_name_component[l:index]
-            \ = strpart(l:buffer_name_component[l:index], 0, 2)
-          else
-            let l:buffer_name_component[l:index]
-            \ = strpart(l:buffer_name_component[l:index], 0, 1)
-          endif
-        endfor
-        if l:buffer_type == "help"
-          let l:buffer_name
-          \ = "H:"
-          \ .. l:buffer_name_component[len(l:buffer_name_component) - 1]
-        elseif l:buffer_type == "terminal"
-          let l:buffer_name
-          \ = "T:"
-          \ .. l:buffer_name_component[len(l:buffer_name_component) - 1]
-        else
-          let l:buffer_name = join(l:buffer_name_component, "/")
-        endif
-      endif
-    endif
-    let l:result ..= printf("%s ", l:buffer_name)
-  endfor
-  let l:result ..= "%#TabLine#%="
+function TablineLabel(n)
+  let l:buffer_list = tabpagebuflist(a:n)
+  let l:index_window = tabpagewinnr(a:n)
 
+  return bufname(buffer_list[l:index_window - 1])
+endfunction
+
+function Tabline()
+  let l:index_tab = tabpagenr()
   let l:n_tab = tabpagenr("$")
-  let l:tab_id = tabpagenr()
-  let l:result ..= printf("%d/%d ", l:tab_id, l:n_tab)
+  let l:result = "%#TabLine#" .. printf(" %d/%d  ", l:index_tab, l:n_tab)
+
+  let l:n_tab_page = tabpagenr("$")
+  for l:index in range(l:n_tab_page)
+    let l:result ..= "%#TabLine#"
+    if l:index == 1
+      let l:result ..= "|"
+    endif
+    if l:index + 1 == tabpagenr()
+      let l:result ..= "%#TabLineSel#"
+    else
+      let l:result ..= "%#TabLine#"
+    endif
+    let l:result ..= " %{TablineLabel(" .. (l:index + 1) .. ")} "
+  endfor
+  let l:result ..= "%#TabLine#"
 
   return l:result
 endfunction
