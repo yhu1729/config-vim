@@ -54,7 +54,6 @@ set pumheight=7
 set scrolloff=0
 set secure
 set sessionoptions=buffers,curdir,globals,help,localoptions,tabpages
-set shell=/opt/homebrew/bin/zsh
 set shiftwidth=2
 set shortmess=astTWIcCqF
 set showtabline=2
@@ -89,3 +88,10 @@ set wildignore=*.DS_Store,*.bak,*.git,*.o,*.swp
 set wildignorecase
 set wildmenu
 set wildoptions=pum
+
+let s:uname = system("uname")
+if s:uname == "Linux\n"
+  set shell=/usr/bin/zsh
+elseif s:uname == "Darwin\n"
+  set shell=/opt/homebrew/bin/zsh
+endif
