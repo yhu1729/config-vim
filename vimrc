@@ -22,6 +22,7 @@ source $MYVIMDIR/keymap.vim
 " language
 source $MYVIMDIR/config.c.vim
 source $MYVIMDIR/config.cpp.vim
+source $MYVIMDIR/config.fortran.vim
 
 " plugin
 source $MYVIMDIR/config.man.vim
