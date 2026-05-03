@@ -13,7 +13,7 @@ function Tabline()
   let l:n_tab_page = tabpagenr("$")
   for l:index in range(l:n_tab_page)
     let l:result ..= "%#TabLine#"
-    if l:index == 1
+    if l:index >= 1
       let l:result ..= "|"
     endif
     if l:index + 1 == tabpagenr()
