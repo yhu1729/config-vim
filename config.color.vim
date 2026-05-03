@@ -2,7 +2,7 @@ augroup color_all
   autocmd!
   autocmd ColorScheme *
   \ hi  clear ColorColumn |
-  \ hi        ColorColumn ctermfg=15 ctermbg=0 |
+  \ hi        ColorColumn ctermfg=0 ctermbg=7 |
   \ hi  clear Comment |
   \ hi        Comment ctermfg=12 |
   \ hi! link  CurSearch Search |
