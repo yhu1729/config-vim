@@ -91,7 +91,12 @@ set wildoptions=pum
 
 let s:uname = system("uname")
 if s:uname == "Linux\n"
-  set shell=/usr/bin/zsh
+  let s:distro_name = system("hostnamectl | grep 'Operating System'")
+  if s:distro_name =~ "Fedora"
+    set shell=/usr/bin/zsh
+  else
+    set shell=/usr/bin/bash
+  endif
 elseif s:uname == "Darwin\n"
   set shell=/opt/homebrew/bin/zsh
 endif
