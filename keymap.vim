@@ -17,9 +17,9 @@ nnoremap zm <Nop>
 nnoremap zr <Nop>
 nnoremap <BS> <C-O>
 nnoremap <Tab> <C-I>
-nnoremap <CR> zt
+nnoremap <CR> <Nop>
 nnoremap <Space> <Nop>
-nnoremap <Leader><CR> zb
+nnoremap <Leader><CR> zt
 nnoremap <Leader><Space> zz
 nnoremap <Leader>c <Cmd>tabclose!<CR>
 nnoremap <Leader>w <Cmd>wall<CR><C-W>c
