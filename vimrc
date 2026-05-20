@@ -46,6 +46,7 @@ source $MYVIMDIR/config.rst.vim
 source $MYVIMDIR/config.subversive.vim
 source $MYVIMDIR/config.yoink.vim
 source $MYVIMDIR/config.vimtex.vim
+source $MYVIMDIR/config.vimwiki.vim
 
 " colorscheme
 source $MYVIMDIR/config.color.vim

@@ -85,3 +85,6 @@
 [submodule "external/lervag/vimtex"]
 	path = external/lervag/vimtex
 	url = https://github.com/lervag/vimtex.git
+[submodule "external/vimwiki/vimwiki"]
+	path = external/vimwiki/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
