@@ -1,5 +1,6 @@
-backup
-spell
-undo
+backup/
+spell/
+undo/
 
+.DS_Store
 .netrwhist
