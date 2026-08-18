@@ -70,7 +70,7 @@ set spellsuggest=best,7
 set splitbelow
 set splitkeep=topline
 set splitright
-set statusline=%=\ %f\ 
+set statusline=\ %f\ 
 set tabclose=left
 set tabstop=2
 set tildeop
