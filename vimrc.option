@@ -54,11 +54,11 @@ set pumheight=7
 set scrolloff=0
 set secure
 set sessionoptions=buffers,curdir,globals,help,localoptions,tabpages
-set shiftwidth=2
+set shiftwidth=4
 set shortmess=astTWIcCqF
 set showtabline=2
 set sidescroll=1
-set sidescrolloff=2
+set sidescrolloff=4
 set signcolumn=no
 set smartcase
 set smartindent
@@ -72,7 +72,7 @@ set splitkeep=topline
 set splitright
 set statusline=\ %f\ 
 set tabclose=left
-set tabstop=2
+set tabstop=4
 set tildeop
 set timeoutlen=500
 set ttimeout
