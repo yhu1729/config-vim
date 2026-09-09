@@ -6,6 +6,7 @@ let g:vimwiki_list = [
   \   'index': 'home',
   \ }
   \ ]
+let g:vimwiki_conceallevel=0
 
 augroup language_vimwiki
   autocmd!
