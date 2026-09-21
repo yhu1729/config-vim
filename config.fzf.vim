@@ -24,7 +24,7 @@ let g:fzf_vim = {
 let g:fzf_vim.listproc = { list -> fzf#vim#listproc#location(list) }
 
 let g:fzf_default_options = {
-\   "options": '--pointer=" " --marker=" "',
+\   "options": '--pointer=" " --marker=" " --no-footer',
 \ }
 
 command! -bang -nargs=? -complete=dir Files
